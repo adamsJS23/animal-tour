@@ -16,3 +16,67 @@ body {
 img {
   max-width: 100%;
 }
+
+p{
+  line-height: 1.5;
+}
+
+.wrapper {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hide-mobile{
+  display: none;
+}
+
+.hero {
+  background-image: linear-gradient(
+    to right,
+    #ffebcd 0%,
+    #ffb095 61%,
+    #ff8b72 100%
+  );
+
+  padding: 4rem 2rem ;
+  height: 100vh;
+}
+
+.hero__heading{
+  font-size: 3.5rem;
+  margin-bottom: 3rem;
+  font-weight: 700;
+}
+
+.hero__text{
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+}
+
+.features{
+  padding: 4rem 0;
+}
+
+.features>*:not(:last-child){
+  margin-bottom: 4rem;
+}
+
+.feature{
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.feature__icon{
+  margin-bottom: 1rem;
+}
+
+.feature__title{
+font-size: 2.8rem;
+font-weight: 700;
+margin-bottom: 2rem;
+}
+
+.feature__text{
+  font-size: 1.6rem;
+}
