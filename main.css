@@ -17,7 +17,7 @@ img {
   max-width: 100%;
 }
 
-p{
+p {
   line-height: 1.5;
 }
 
@@ -27,7 +27,7 @@ p{
   margin: 0 auto;
 }
 
-.hide-mobile{
+.hide-mobile {
   display: none;
 }
 
@@ -39,44 +39,120 @@ p{
     #ff8b72 100%
   );
 
-  padding: 4rem 2rem ;
-  height: 100vh;
+  padding: 4rem 2rem;
 }
 
-.hero__heading{
+.hero__heading {
   font-size: 3.5rem;
   margin-bottom: 3rem;
   font-weight: 700;
 }
 
-.hero__text{
+.hero__text {
   font-size: 2.2rem;
   margin-bottom: 2rem;
 }
 
-.features{
+.hero__img--1 {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+
+.features {
   padding: 4rem 0;
 }
 
-.features>*:not(:last-child){
+.features > *:not(:last-child) {
   margin-bottom: 4rem;
 }
 
-.feature{
+.feature {
   padding: 0 2rem;
   text-align: center;
 }
 
-.feature__icon{
+.feature__icon {
   margin-bottom: 1rem;
 }
 
-.feature__title{
-font-size: 2.8rem;
-font-weight: 700;
-margin-bottom: 2rem;
+.feature__title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
 }
 
-.feature__text{
+.feature__text {
   font-size: 1.6rem;
+}
+
+@media only screen and (min-width: 48em) {
+  .hero__copy {
+    width: 80%;
+  }
+
+  .hero__heading {
+    font-size: 7rem;
+  }
+
+  .hero__composition {
+    display: flex;
+    height: 27rem;
+    width: 100%;
+    transform: translateY(9rem);
+    margin-top: -10rem;
+  }
+
+  .hero__composition--col-left {
+    flex: 1.5;
+    display: flex;
+    gap: 3rem;
+    justify-content: space-between;
+  }
+
+  .hero__composition--col-right {
+    flex: 1;
+    align-items: flex-start;
+  }
+
+  .hide-mobile {
+    display: block;
+  }
+
+  .hero__img--3 {
+    width: 72.5%;
+    aspect-ratio: 1/1;
+    margin-left: 3rem;
+  }
+
+  .hero__img--1,
+  .hero__img--2 {
+    width: 47%;
+    aspect-ratio: 1/1;
+  }
+
+  .hero__img--1 {
+    align-self: flex-start;
+  }
+
+  .hero__img--2 {
+    align-self: flex-end;
+  }
+
+  .hero__img-- {
+    align-self: flex-start;
+  }
+
+  .features {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .feature {
+    text-align: left;
+    flex: 1;
+  }
+
+  .feature:nth-child(1) {
+    flex-basis: 100%;
+  }
 }
